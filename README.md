@@ -1,9 +1,23 @@
-<h1>Temperatura do sensor interno do Raspberry pi w</h1>
+# Temperatura do Sensor Interno do Raspberry Pi Pico W
 
-Codigo que realize a captura da temperatura interna da placa com comunicação através do DMA
+## 📌 Proposta
 
-A proposta dessa atividade é economizar recursos da CPU
+Este projeto realiza a **leitura da temperatura interna** do microcontrolador **Raspberry Pi Pico W** utilizando comunicação via **DMA (Direct Memory Access)**, permitindo:
 
-Da pra ver no codigo que a maioria das funções é realizada com acesso direto a memoria(DMA), o que deixa o programa mais rapido. 
+- 📡 Captura precisa da temperatura interna (canal ADC 4)
+- ⚡ Leitura eficiente com **DMA**, sem sobrecarregar a CPU
+- 🧠 Acesso direto à memória, reduzindo o uso de ciclos de processamento
+- 🖥️ Exibição dos dados em um **display OLED via I2C**
+
+## 🛠️ Tecnologias e recursos utilizados
+
+- BitDogLab
+- Linguagem C com SDK oficial da Raspberry Pi
+- ADC interno (canal 4) para temperatura
+- Comunicação DMA para leitura de ADC
+- Display OLED com driver SSD1306 (via I2C)
+
+
+
 
 ![image](https://github.com/user-attachments/assets/aca4180f-c47d-4ed6-b242-c4222af8e9d7)
